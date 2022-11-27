@@ -1,0 +1,23 @@
+<%- include('partials/header'); -%>
+    <div class="container w-50 mt-4">
+        <h4>Admin Page</h4>
+        <hr>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td><label for="">New Article: </label></td>
+                    <td><a class="btn btn-primary" href="/admin/compose">Compose new</a></td>
+                </tr>
+                <tr>
+                    <td><label for="">Show all Article: </label></td>
+                    <td><a class="btn btn-success" href="/allarticles">All Articles</a></td>
+                </tr>
+                <tr>
+                    <td><label for="">Add new User: </label></td>
+                    <td><a class="btn btn-danger" href="/admin/adduser">Add Admin</a></td>
+                </tr>
+            </tbody>
+        </table>
+   
+    </div>
+    <%- include('partials/footer'); -%>

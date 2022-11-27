@@ -1,0 +1,28 @@
+<%- include('partials/header'); -%>
+    <div class="container w-50 mt-4">
+        <h4>All Articles</h4>
+        <hr>
+        <table class="table">
+            <tbody>
+                <% allPosts.forEach((postItem)=>{ %>
+                    
+                    <tr>
+                        <td><p><%= postItem.blogTitle %></p></td>
+                        <td>
+                            <form action="/admin/delete" method="post">
+                                <button class="btn btn-danger btn-sm" name="deleteBlog" value="<%= postItem.blogTitle %>" type="submit">Delete</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form action="/admin/edit" method="post">
+                                <button class="btn btn-info btn-sm" name="deleteBlog" value="<%= postItem.blogTitle %>" type="submit">Edit</button>
+                            </form>
+                        </td>
+                    </tr>
+
+               <% }); %> 
+            </tbody>
+        </table>
+   
+    </div>
+    <%- include('partials/footer'); -%>
